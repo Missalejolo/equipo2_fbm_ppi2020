@@ -1,3 +1,11 @@
+import React, { Component } from 'react';
+import '../styles/styles.css'; 
+
+class Login extends Component {
+    
+    render() {
+        return (
+          <>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -14,6 +22,14 @@
     </ul>
   </div>
 </nav>
+</>
 
+          ); 
+        }
+    }
+
+
+ 
+export default Login;
 
 

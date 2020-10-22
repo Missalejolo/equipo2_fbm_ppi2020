@@ -11,9 +11,13 @@ body {
     font-family: verdana;
     font-size: 20px;
   }
-  .patata{
-    margin: 100px;
+
+  .iniciosesion{
+    margin-left: auto;
+  margin-right: auto;
+
   }
-  patata{
-    margin: 100px;
+  .photo{
+    height: 500px;
+    margin-bottom: 6%;
   }
