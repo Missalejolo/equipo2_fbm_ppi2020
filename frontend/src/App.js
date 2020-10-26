@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Iniciosesion from './pages/Iniciosesion';
 import Quienes from './pages/Quienes';
 import Registro from './pages/Registro';
+
+import Prueba from './pages/Prueba';
 const App = () => {
   return (
     <BrowserRouter>
@@ -12,6 +14,7 @@ const App = () => {
             <Route path="/iniciosesion" component={Iniciosesion} />
             <Route path="/quienes" component={Quienes} />
             <Route path="/registro" component={Registro} />
+            <Route path="/prueba" component={Prueba} />
             </Switch>
              </BrowserRouter>
 

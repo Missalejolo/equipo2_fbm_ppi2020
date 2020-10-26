@@ -8,9 +8,9 @@ class Login extends Component {
         return (
           <>
    
-   <div className="inicio">
-   <div className="container align-items-center mt-5 text-center">
-    <form className="form-signin text-center align-items-center col-6">
+   <div className="container">
+   <div className="row justify-content-center align-items-center minh-100">
+    <form className="form-signin text-center align-items-center col-10">
     <h1 className="h3 mb-5 font-weight-normal text-center ">Inicia sesion</h1>
     <label for="inputEmail" className="sr-only mb-3">Documentode identidad</label>
     <input type="email" id="inputEmail" className="form-control mb-3" placeholder="Email " required="" autofocus=""/>
@@ -20,11 +20,14 @@ class Login extends Component {
     <label>
       <input type="checkbox" value="remember-me"/> Recuerdame</label>
     </div>
-    <Link className="bot" to="iniciosesion">
-    <button className="btn btn-lg btn-success btn-flex mb-3 col-6" type="submit">Iniciar Sesión</button>
+    
+    <div></div>
+    <Link className="bot" to="prueba">
+    <button className="btn btn-lg btn-success btncustom" type="submit">Iniciar Sesión</button>
     </Link>
+    <div></div>
     <Link className="bot" to="">
-    <button className="btn btn-lg btn-success btn-flex mb-3 col-6" type="submit">Regresar</button>
+    <button className="btn btn-lg btn-success btncustom" type="submit">Regresar</button>
     </Link>
     
     </form>
