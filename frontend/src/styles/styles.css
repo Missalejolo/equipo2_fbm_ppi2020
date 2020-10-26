@@ -1,0 +1,47 @@
+body {
+    background-color: #EFFFD6;
+  }
+  
+  h1 {
+    color: #68A900;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  .photo{
+    height: 200px;
+    margin-bottom: 2%;
+
+  }.quienes{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+  }.equipo{
+    text-align: center;
+    font-size: 40px;
+    color: #68A900;
+  }.integrantes{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+  }.acerca{
+    position:absolute;
+    bottom:5px;
+    right:10px;
+  }.btncustom{
+    width:100% !important;
+    max-width: 250px;
+    margin-bottom: 2%;
+    font-size: 100%;
+    
+  }.nav{
+    position: relative;;
+    top:5px;
+    margin-left: auto;
+    margin-right: auto;
+  }.container{
+  }
