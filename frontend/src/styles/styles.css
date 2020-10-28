@@ -5,9 +5,20 @@ body {
   h1 {
     color: #68A900;
     text-align: center;
+  }h2{
+    color: #68A900;
+    text-align:Center;
+    margin-top: 40px;
+    font-size: 30px;
+
+  } 
+  h3{
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
   }
-  
-  p {
+  .p {
     font-family: verdana;
     font-size: 20px;
   }
@@ -15,11 +26,14 @@ body {
   .photo{
     height: 200px;
     margin-bottom: 2%;
-
   }.quienes{
     font-size: 50px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 50px;
+    display:flex;
+    background:white; 
+    padding:5px;
+  
   }.equipo{
     text-align: center;
     font-size: 40px;
@@ -28,6 +42,7 @@ body {
     text-align: center;
     margin-top: 40px;
     font-size: 30px;
+    margin-bottom: 2%;
   }.acerca{
     position:absolute;
     bottom:5px;
