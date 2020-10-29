@@ -1,7 +1,12 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
+<<<<<<< HEAD
 
 import Iniciosesion from './pages/iniciosesion';
+=======
+import Home from './pages/Patata';
+import Iniciosesion from './pages/Iniciosesion';
+>>>>>>> 875eca844df1b77adbea5d1e9d742c8cd1ee1959
 import Quienes from './pages/Quienes';
 import Registro from './pages/Registro';
 import Completado from './pages/Completado';

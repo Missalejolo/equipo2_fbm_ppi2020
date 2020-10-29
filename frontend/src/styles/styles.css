@@ -58,6 +58,7 @@ body {
     top:5px;
     margin-left: auto;
     margin-right: auto;
+<<<<<<< HEAD
   }.h2seg{
     color: black;
   }.containertit{
@@ -92,4 +93,10 @@ body {
     
     margin: 90px;
     
+=======
+  }.h2verificar{
+    color: #000000;
+  }.contit{
+    margin-top: 25px;
+>>>>>>> 875eca844df1b77adbea5d1e9d742c8cd1ee1959
   }
