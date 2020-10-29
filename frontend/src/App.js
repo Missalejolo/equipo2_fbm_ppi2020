@@ -1,6 +1,10 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
+<<<<<<< HEAD
 import Home from './pages/Home';
+=======
+import Home from './pages/Patata';
+>>>>>>> 875eca844df1b77adbea5d1e9d742c8cd1ee1959
 import Iniciosesion from './pages/Iniciosesion';
 import Quienes from './pages/Quienes';
 import Registro from './pages/Registro';
