@@ -20,7 +20,7 @@ class Login extends Component {
             <h2>Jose Alejandro Gonzalez Villa:<h3>Programador y diseñador.</h3></h2>
     <div className="integrantes"><img className ="img"src= {JoseA}width="300" height="300"align="center"/></div>
             <h2>Kevin Alexander Guzman Botero:<h3>Programador y diseñador.</h3></h2>
-    <div className="integrantes"><img className ="img"src={Kevin}width="300" height="280"align="center"/></div>
+    <div className="integrantes"><img className ="img"src={Kevin}width="300" height="300"align="center"/></div>
          
   
 </>

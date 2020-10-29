@@ -59,6 +59,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
   }.h2seg{
     color: black;
   }.containertit{
@@ -99,4 +100,31 @@ body {
   }.contit{
     margin-top: 25px;
 >>>>>>> 875eca844df1b77adbea5d1e9d742c8cd1ee1959
+=======
+
+  }.h2alertas{
+   margin-left: -600px;
+
+  }.Asistencias{
+    position: relative;
+    top:-180px;
+    text-align: center
+
+  }.Estudiantes{
+    position: relative;
+    top:30px;
+
+  
+  }.p-alertas{
+    text-align: center;
+    margin-left: -600px;
+
+  }.ver{
+    position: relative;
+    top:-180px;
+    text-align: center
+
+    
+
+>>>>>>> 9040a96da612c92ecb0c9c72c7080acdd482d455
   }

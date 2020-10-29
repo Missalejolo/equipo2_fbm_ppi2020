@@ -1,10 +1,15 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import Iniciosesion from './pages/iniciosesion';
 =======
+import Home from './pages/Home';
+>>>>>>> 9040a96da612c92ecb0c9c72c7080acdd482d455
+=======
 import Home from './pages/Patata';
+>>>>>>> 875eca844df1b77adbea5d1e9d742c8cd1ee1959
 import Iniciosesion from './pages/Iniciosesion';
 >>>>>>> 875eca844df1b77adbea5d1e9d742c8cd1ee1959
 import Quienes from './pages/Quienes';
