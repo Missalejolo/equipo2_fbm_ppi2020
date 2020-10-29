@@ -58,5 +58,8 @@ body {
     top:5px;
     margin-left: auto;
     margin-right: auto;
-  }.container{
+  }.h2verificar{
+    color: #000000;
+  }.contit{
+    margin-top: 25px;
   }
