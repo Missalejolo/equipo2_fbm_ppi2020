@@ -58,5 +58,29 @@ body {
     top:5px;
     margin-left: auto;
     margin-right: auto;
-  }.container{
+
+  }.h2alertas{
+   margin-left: -600px;
+
+  }.Asistencias{
+    position: relative;
+    top:-180px;
+    text-align: center
+
+  }.Estudiantes{
+    position: relative;
+    top:30px;
+
+  
+  }.p-alertas{
+    text-align: center;
+    margin-left: -600px;
+
+  }.ver{
+    position: relative;
+    top:-180px;
+    text-align: center
+
+    
+
   }
