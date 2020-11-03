@@ -30,7 +30,7 @@ class Login extends Component {
     </Link>
     <div></div>
     <Link to="">
-    <button className="btn btn-lg btn-success btncustom" type="submit">Regresar</button>
+    <button className="boton" type="submit">Regresar</button>
     </Link>
     
     

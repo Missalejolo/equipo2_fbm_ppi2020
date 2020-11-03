@@ -58,8 +58,73 @@ body {
     top:5px;
     margin-left: auto;
     margin-right: auto;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  }.h2seg{
+    color: black;
+  }.containertit{
+    margin-top: 25px; ;
+  }.asistio{
+    text-align-last: center;
+    
+    margin: 10px;/* dar espacio entre botones */
+
+
+    
+  }.no{
+    text-align-last: center;
+    
+    margin: 10px;/* dar espacio entre botones */
+    
+
+  }.tarde{
+    text-align-last: center;
+    
+    margin: 10px;/* dar espacio entre botones */
+
+    
+  }.op{
+    color: black;
+   
+  }.Tseg{
+    margin-top: 25px; ;
+    margin:40px;
+  }.Continuar{
+    text-align-last: center;
+    
+    margin: 90px;
+    
+=======
   }.h2verificar{
     color: #000000;
   }.contit{
     margin-top: 25px;
+>>>>>>> 875eca844df1b77adbea5d1e9d742c8cd1ee1959
+=======
+
+  }.h2alertas{
+   margin-left: -600px;
+
+  }.Asistencias{
+    position: relative;
+    top:-180px;
+    text-align: center
+
+  }.Estudiantes{
+    position: relative;
+    top:30px;
+
+  
+  }.p-alertas{
+    text-align: center;
+    margin-left: -600px;
+
+  }.ver{
+    position: relative;
+    top:-180px;
+    text-align: center
+
+    
+
+>>>>>>> 9040a96da612c92ecb0c9c72c7080acdd482d455
   }
