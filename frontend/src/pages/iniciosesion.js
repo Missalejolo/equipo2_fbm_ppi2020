@@ -22,8 +22,13 @@ class Login extends Component {
     </div>
     
     <div></div>
-    <Link className="bot" to="prueba">
-    <button className="btn btn-lg btn-success btncustom" type="submit">Iniciar Sesión</button>
+    <Link className="bot" to="menud">
+    <button className="btn btn-lg btn-success btncustom" type="submit">Iniciar Sesión (Docente)</button>
+    </Link>
+    
+    <div></div>
+    <Link className="bot" to="menuc">
+    <button className="btn btn-lg btn-success btncustom" type="submit">Iniciar Sesión (Coordinador)</button>
     </Link>
     <div></div>
     <Link className="bot" to="">

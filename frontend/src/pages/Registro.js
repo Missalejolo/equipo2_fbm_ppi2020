@@ -26,11 +26,15 @@ class Login extends Component {
     
     <div></div>
     <Link to="iniciosesion">
-    <button className="btn btn-lg btn-success btncustom" type="submit">Registrarse</button>
+    <button className="btn btn-lg btn-success btncustom" type="submit">Registrarse (Docente)</button>
+    </Link>
+    <div></div>
+    <Link to="iniciosesion">
+    <button className="btn btn-lg btn-success btncustom" type="submit">Registrarse (Coordinador)</button>
     </Link>
     <div></div>
     <Link to="">
-    <button className="boton" type="submit">Regresar</button>
+    <button className="btn btn-lg btn-success btncustom" type="submit">Regresar</button>
     </Link>
     
     

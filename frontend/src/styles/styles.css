@@ -1,8 +1,10 @@
 body {
     background-color: #EFFFD6;
   }
-  
-  h1 {
+  p{
+    font-family: verdana;
+    font-size: 20px;
+  }h1 {
     color: #68A900;
     text-align: center;
   }h2{
@@ -45,8 +47,8 @@ body {
     margin-bottom: 2%;
   }.acerca{
     position:absolute;
-    bottom:5px;
-    right:10px;
+    bottom:2%;
+    right:1%;
   }.btncustom{
     width:100% !important;
     max-width: 250px;
@@ -58,8 +60,6 @@ body {
     top:5px;
     margin-left: auto;
     margin-right: auto;
-<<<<<<< HEAD
-<<<<<<< HEAD
   }.h2seg{
     color: black;
   }.containertit{
@@ -94,13 +94,10 @@ body {
     
     margin: 90px;
     
-=======
   }.h2verificar{
     color: #000000;
   }.contit{
     margin-top: 25px;
->>>>>>> 875eca844df1b77adbea5d1e9d742c8cd1ee1959
-=======
 
   }.h2alertas{
    margin-left: -600px;
@@ -115,16 +112,12 @@ body {
     top:30px;
 
   
-  }.p-alertas{
-    text-align: center;
-    margin-left: -600px;
+  }.bloque { 
+    display: inline-block;
+    width: 50%; 
 
   }.ver{
     position: relative;
     top:-180px;
     text-align: center
-
-    
-
->>>>>>> 9040a96da612c92ecb0c9c72c7080acdd482d455
   }
