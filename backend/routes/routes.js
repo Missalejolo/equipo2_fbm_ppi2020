@@ -2,8 +2,8 @@ const express=require('express');
 const router =express.Router();
 const mysqlConnection = require('../db/db');
 
-router.get('/estudiantes',(req,res)=>{
-mysqlConnection.query('SELECT * FROM actores',(err,rows,fiels)=>{
+router.get('/',(req,res)=>{
+mysqlConnection.query('SELECT * FROM tbl_faltas',(err,rows,fiels)=>{
 // si no hay error
     if(!err){
 

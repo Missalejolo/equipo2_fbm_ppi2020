@@ -8,9 +8,8 @@ class Login extends Component {
     render() {
         return (
           
-          <>
-
-<header>
+          <> 
+          <header>
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
   
@@ -29,25 +28,19 @@ class Login extends Component {
 </nav>
    
    </header>
-
-   <div className="container">
-   <div className="row justify-content-center align-items-center minh-100">
-<form className="form-signin text-center align-items-center col-10">
+          
+          <div className="container">
+    
+    <div className="row justify-content-center align-items-center minh-100">
+    <form className="form-signin text-center align-items-center col-10">
+      <h3>La operación se ha completado con éxito</h3>
+      <Link className="bot" to="AsisDoc">  
+<button className="btn btn-lg btn-success asistio btncustom" type="submit">Continuar</button> <br></br>
+</Link>
+     </form>
+     </div>
+   </div>
   
-<div>
- <h2>11°1</h2>
- <p className="bloque">Artistica</p> 
- <Link to="AsisDoc"><a className="h4 bloque" href="AsisDoc">Ver mas</a></Link> 
- </div>
- <hr></hr>
- 
- <Link to="AggGrupo">
-    <button className="btn btn-lg btn-primary btncustom" type="submit">Agregar grupo</button>
-    </Link>
-</form>
-</div>
-</div>
-
 </>
 
           ); 

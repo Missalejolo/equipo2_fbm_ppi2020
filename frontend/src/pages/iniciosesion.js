@@ -13,7 +13,7 @@ class Login extends Component {
     <form className="form-signin text-center align-items-center col-10">
     <h1 className="h3 mb-5 font-weight-normal text-center ">Inicia sesion</h1>
     <label for="inputEmail" className="sr-only mb-3">Documentode identidad</label>
-    <input type="email" id="inputEmail" className="form-control mb-3" placeholder="Email " required="" autofocus=""/>
+    <input type="email" id="inputEmail" className="form-control mb-3" placeholder="Email" required="" autofocus=""/>
     <label for="inputPassword" className="sr-only">Contraseña</label>
     <input type="password" id="inputPassword" className="form-control mb-3 " placeholder="Contraseña" required=""/>
     <div className="checkbox mb-3">

@@ -14,6 +14,9 @@ import MenuD from './pages/MenuD';
 import MenuC from './pages/MenuC';
 import AsisDoc from './pages/AsisDoc';
 import Prueba from './pages/Prueba';
+import AggEstudiante from './pages/AggEstudiante';
+import AggGrupo from './pages/AggGrupo';
+import CompletadoD from './pages/CompletadoD';
 const App = () => {
   return (
     <BrowserRouter>
@@ -31,6 +34,9 @@ const App = () => {
             <Route path="/menud" component={MenuD} />
             <Route path="/menuc" component={MenuC} />
             <Route path="/asisdoc" component={AsisDoc} />
+            <Route path="/aggestudiante" component={AggEstudiante} />
+            <Route path="/completadod" component={CompletadoD} />
+            <Route path="/agggrupo" component={AggGrupo} />
             </Switch>
              </BrowserRouter>
 
