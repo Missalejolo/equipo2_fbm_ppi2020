@@ -40,12 +40,18 @@ class Login extends Component {
 <div>
 <Link to="Seguimiento"><a class="h4" href="Seguimiento">Juana Velasquez Tobon</a></Link>
 </div>
-  
+  <h5>Jose Alejandro López Rojas</h5>
+  <h5>Kevin Alexander Guzman Botero</h5>
+  <h5>Jose Alejandro Gonzalez Villa</h5>
 <hr></hr>
 <div>
+
+
 <h6>25-10-2020</h6>
 </div>
-
+<Link to="AggEstudiante">
+    <button className="btn btn-lg btn-primary btncustom" type="submit">Agregar estudiante</button>
+    </Link>
 <div>
 <Link to="Alertasg">
     <button className="btn btn-lg btn-success btncustom" type="submit">Regresar</button>
@@ -55,7 +61,9 @@ class Login extends Component {
  </div>
  </div>
 </>
-
+/*<div>
+<Link to="AggEstudiante"><a class="h5" href="Seguimiento">Agregar estudiante</a></Link>
+</div>*/
           ); 
         }
     }

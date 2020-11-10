@@ -1,5 +1,9 @@
 body {
     background-color: #EFFFD6;
+  }a{
+    color:#68A900
+  }a:hover{
+    color: #599000;
   }
   p{
     font-family: verdana;

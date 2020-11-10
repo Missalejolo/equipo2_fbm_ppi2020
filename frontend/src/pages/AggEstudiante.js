@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import '../styles/styles.css';
 import {Link} from 'react-router-dom'; 
-import logo from '../imagenes/logo.png'
-
+import logo from '../imagenes/logo.png';
 class Login extends Component {
     
     render() {
         return (
-          
           <>
-
-<header>
+  <header>
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
   
@@ -29,25 +26,28 @@ class Login extends Component {
 </nav>
    
    </header>
-
-   <div className="container">
+  <div className="container">
    <div className="row justify-content-center align-items-center minh-100">
-<form className="form-signin text-center align-items-center col-10">
-  
-<div>
- <h2>11°1</h2>
- <p className="bloque">Artistica</p> 
- <Link to="AsisDoc"><a className="h4 bloque" href="AsisDoc">Ver mas</a></Link> 
- </div>
- <hr></hr>
- 
- <Link to="AggGrupo">
-    <button className="btn btn-lg btn-primary btncustom" type="submit">Agregar grupo</button>
+    <form className="form-signin text-center align-items-center col-10">
+    <h1 className="h3 mb-5 font-weight-normal text-center ">Agregar estudiante</h1>
+    <label for="inputEmail" className="sr-only mb-3">Nombres</label>
+    <input type="text" id="inputEmail" className="form-control mb-3" placeholder="Nombres" required="" autofocus=""/>
+    <label for="inputEmail" className="sr-only mb-3">Apellidos</label>
+    <input type="text" id="inputEmail" className="form-control mb-3" placeholder="Apellidos " required="" autofocus=""/>
+    
+    <div></div>
+    <Link to="CompletadoD">
+    <button className="btn btn-lg btn-success btncustom" type="submit">Siguiente</button>
     </Link>
-</form>
-</div>
-</div>
-
+    <div></div>
+    <Link to="AsisDoc">
+    <button className="btn btn-lg btn-success btncustom" type="submit">Regresar</button>
+    </Link>
+    
+    
+    </form>
+  </div>
+  </div>
 </>
 
           ); 
