@@ -29,7 +29,7 @@ class Login extends Component {
   <div className="container">
    <div className="row justify-content-center align-items-center minh-100">
     <form className="form-signin text-center align-items-center col-10">
-    <h1 className="h3 mb-5 font-weight-normal text-center ">Agregar estudiante</h1>
+    <h1 className="h3 mb-5 font-weight-normal text-center ">Agregar estudiantes</h1>
     <label for="inputEmail" className="sr-only mb-3">Nombre</label>
     <input type="text" id="inputEmail" className="form-control mb-3" placeholder="Nombre" required="" autofocus=""/>
     <label for="inputEmail" className="sr-only mb-3">Grado</label>
