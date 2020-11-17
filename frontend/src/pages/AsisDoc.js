@@ -40,9 +40,15 @@ class Login extends Component {
 <div>
 <Link to="Seguimiento"><a class="h4" href="Seguimiento">Juana Velasquez Tobon</a></Link>
 </div>
-  <h5>Jose Alejandro López Rojas</h5>
-  <h5>Kevin Alexander Guzman Botero</h5>
-  <h5>Jose Alejandro Gonzalez Villa</h5>
+<div>
+<Link to="Seguimiento"><a class="h4" href="Seguimiento">Jose Alejandro Gonzalez Villa</a></Link>
+</div>
+<div>
+<Link to="Seguimiento"><a class="h4" href="Seguimiento">Jose Alejandro López Rojas</a></Link>
+</div>
+<div>
+<Link to="Seguimiento"><a class="h4" href="Seguimiento">Kevin Alexander Guzman Botero</a></Link>
+</div>
 <hr></hr>
 <div>
 
