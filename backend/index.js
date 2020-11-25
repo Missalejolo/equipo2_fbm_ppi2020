@@ -1,14 +1,21 @@
 const express =require('express');  //declaracion
  const app = express(); // constructor de la clase express
  const routes = require('./routes/routes');
-  //se define las otras rutas
+ const cors = require('cors');
+
+//importante para conexion del front con el back
+//Uso de cors
+app.use(cors({origin: '*'}));
+// conectar con el link de su frontend app.use(cors({origin: 'https://ppi-app.vercel.app/'})) 
+ 
+ //se define las otras rutas
  // por módulos ( routaProductos, e...)
 const estudiantes=require('./routes/estudiantes');
 const grupos=require('./routes/grupos');
 const usuarios=require('./routes/usuarios');
 const faltas=require('./routes/faltas');
 
-app.set('port',3000)//
+app.set('port',process.env.PORT || 3000)//
 
   //middleware
   app.use(express.json());
