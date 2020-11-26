@@ -55,6 +55,7 @@ class Login extends Component {
 
 <h6>25-10-2020</h6>
 </div>
+<form className="form-signin text-center align-items-center col-10"></form>
 <Link to="AggEstudiante">
     <button className="btn btn-lg btn-primary btncustom" type="submit">Agregar estudiante</button>
     </Link>

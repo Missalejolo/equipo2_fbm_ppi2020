@@ -7,7 +7,7 @@ import axios from "axios";
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 
 import '../styles/styles.css';
-const url="http://localhost:3000/grupos";
+const url="http://localhost:3000/estudiantes";
 
 
 class App extends Component {
@@ -17,9 +17,9 @@ class App extends Component {
     modalEliminar: false,
     form:{
       id: '',
-      nombre_grupo: '',
-      grupo: '',
-      asignatura: ''
+      nombre: '',
+      apellido: '',
+      grupo: ''
     }
   }
   
@@ -57,6 +57,9 @@ class App extends Component {
   
   modalInsertar=()=>{
     this.setState({modalInsertar: !this.state.modalInsertar});
+  } 
+modalAsis=()=>{
+    this.setState({modalAsis: !this.state.modalAsis});
   }
   peticionGet=()=>{
     axios.get(url).then(response=>{
@@ -67,14 +70,14 @@ class App extends Component {
     }
   
   
-  seleccionarGrupo=(grupos)=>{
+  seleccionarGrupo=(estudiantes)=>{
     this.setState({
       tipoModal: 'actualizar',
       form: {
-        id: grupos.id,
-        nombre_grupo: grupos.nombre_grupo,
-        grupo: grupos.grupo,
-        asignatura: grupos.asignatura
+        id: estudiantes.id,
+        nombre: estudiantes.nombre,
+        apellido: estudiantes.apellido,
+        grupo: estudiantes.grupo
       }
     })
   }
@@ -130,19 +133,24 @@ class App extends Component {
       <thead>
         <tr>
           <th>ID</th>
-          <th>Nombre</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
           <th>Grupo</th>
-          <th>Asignatura</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
-        {this.state.data.map(grupos=>{
+        {this.state.data.map(estudiantes=>{
           return(
             <tr>
-          <td>{grupos.id}</td>
-          <td>{grupos.nombre_grupo}</td>
-          <td>{grupos.grupo}</td>
-          <td>{grupos.asignatura}</td>
+          <td>{estudiantes.id}</td>
+          <td>{estudiantes.nombre}</td>
+          <td>{estudiantes.apellido}</td>
+          <td>{estudiantes.grupo}</td>
+          <td><button className="btn btn-success" onClick={()=>{this.seleccionarGrupo(estudiantes); this.modalAsis()}}>Ver mas</button>
+                {"   "}
+            
+          </td>
           </tr>
 
           
@@ -152,12 +160,10 @@ class App extends Component {
       
     </table>
     <div></div>
-    
-    <button className="btn btn-primary" onClick={()=>{this.setState({form: null, tipoModal: 'insertar'}); this.modalInsertar()}}>Agregar grupo</button>
-    
-    <Link to="Estudiantes">
-    <button className="btn btn-success" type="submit">Ver estudiantes</button>
-    </Link>
+     <Link to="Alertasg">
+    <button className="btn btn-success" type="submit">Regresar</button>
+    </Link><button className="btn btn-primary" onClick={()=>{this.setState({form: null, tipoModal: 'insertar'}); this.modalInsertar()}}>Agregar estudiante</button>
+   
 
 
     <Modal isOpen={this.state.modalInsertar}>
@@ -169,22 +175,23 @@ class App extends Component {
                     <label htmlFor="id">ID</label>
                     <input className="form-control" type="text" name="id" id="id" readOnly onChange={this.handleChange} value={form?form.id: this.state.data.length+1}/>
                     <br />
-                    <label htmlFor="nombre_grupo">Nombre</label>
-                    <input className="form-control" type="text" name="nombre_grupo" id="nombre_grupo" onChange={this.handleChange} value={form?form.nombre_grupo: ''}/>
+                    <label htmlFor="nombre_grupo">Nombres</label>
+                    <input className="form-control" type="text" name="nombre" id="nombre" onChange={this.handleChange} value={form?form.nombre: ''}/>
                     <br />
-                    <label htmlFor="grupo">Grupo</label>
-                    <input className="form-control" type="text" name="grupo" id="grupo" onChange={this.handleChange} value={form?form.grupo: ''}/>
+                    <label htmlFor="grupo">Apellidos</label>
+                    <input className="form-control" type="text" name="apellido" id="apellido" onChange={this.handleChange} value={form?form.apellido: ''}/>
                     <br />
-                    <label htmlFor="asignatura">Asignatura</label>
-                    <input className="form-control" type="text" name="asignatura" id="asignatura" onChange={this.handleChange} value={form?form.asignatura:''}/>
+                    <label htmlFor="asignatura">Grupo</label>
+                    <input className="form-control" type="text" name="grupo" id="grupo" onChange={this.handleChange} value={form?form.grupo:''}/>
                   </div>
                   
                 </ModalBody>
 
                 <ModalFooter>
                     <button className="btn btn-success" onClick={()=>this.peticionPost()}>
-                    Insertar
+                    Agregar
                   </button>:
+  
                     <button className="btn btn-danger" onClick={()=>this.modalInsertar()}>Cancelar</button>
                 </ModalFooter>
           </Modal>
@@ -199,6 +206,43 @@ class App extends Component {
               <button className="btn btn-secundary" onClick={()=>this.setState({modalEliminar: false})}>No</button>
             </ModalFooter>
           </Modal>
+          <Modal isOpen={this.state.modalAsis}>
+                <ModalHeader style={{display: 'block'}}>
+                  <span style={{float: 'right'}} onClick={()=>this.modalAsis()}>x</span>
+                </ModalHeader>
+                <ModalBody>
+                  <div className="form-group">
+                    <label htmlFor="id">ID</label>
+                    <input className="form-control" type="text" name="id" id="id" readOnly onChange={this.handleChange} value={form?form.id: this.state.data.length+1}/>
+                    <br />
+                    <label htmlFor="nombre_grupo">Nombres</label>
+                    <input className="form-control" type="text" name="nombre" id="nombre" readOnly onChange={this.handleChange} value={form?form.nombre: ''}/>
+                    <br />
+                    <label htmlFor="grupo">Apellidos</label>
+                    <input className="form-control" type="text" name="apellido" id="apellido" readOnly onChange={this.handleChange} value={form?form.apellido: ''}/>
+                    <br />
+                    <label htmlFor="grupo">Grupo</label>
+                    <input className="form-control" type="text" name="grupo" id="grupo" readOnly onChange={this.handleChange} value={form?form.grupo: ''}/>
+                  </div>
+                  
+                </ModalBody>
+
+                <ModalFooter>
+                <button className="btn btn-success" onClick={()=>this.modalAsis()}>
+                    Asistió
+                  </button><button className="btn btn-warning" onClick={()=>this.modalAsis()}>
+                    Llegó tarde
+                  </button>
+                  <button className="btn btn-danger" onClick={()=>this.modalAsis()}>
+                    No asistió
+                  </button>:
+  
+                    <button className="btn btn-light" onClick={()=>this.modalAsis()}>Cancelar</button>
+                </ModalFooter>
+          </Modal>
+
+
+         
 </div>
 </div>
 
@@ -211,10 +255,13 @@ class App extends Component {
 
  
 export default App;
-/*<td>
-          <button className="btn btn-success" onClick={()=>{this.seleccionarGrupo(grupos); this.modalVer()}}>Ver mas</button>
-                {"   "}
-                <button className="btn btn-primary" onClick={()=>{this.seleccionarGrupo(grupos); this.modalInsertar()}}>editar</button>
-                {"   "}
-                <button className="btn btn-danger" onClick={()=>{this.seleccionarGrupo(grupos); this.setState({modalEliminar: true})}}>borrar</button>
-                </td>*/
+/*<button className="btn btn-success" onClick={()=>this.modalInsertar()}>
+                    Asistió
+                  </button><button className="btn btn-warning" onClick={()=>this.modalInsertar()}>
+                    Llegó tarde
+                  </button>
+                  <button className="btn btn-danger" onClick={()=>this.modalInsertar()}>
+                    No asistió
+                  </button>:
+  
+                    <button className="btn btn-light" onClick={()=>this.modalInsertar()}>Cancelar</button>*/ 

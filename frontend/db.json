@@ -1,0 +1,142 @@
+{
+  "estudiantes": [
+    {
+      "id": 1,
+      "nombre": "Jose Alejandro",
+      "apellido": "López Rojas",
+      "grupo": "11"
+    },
+    {
+      "id": 2,
+      "nombre": "Juana",
+      "apellido": "Velasquez Tobón",
+      "grupo": "11"
+    },
+    {
+      "id": 3,
+      "nombre": "Jose Alejandro",
+      "apellido": "Gonzalez Villa",
+      "grupo": "11"
+    },
+    {
+      "id": 4,
+      "nombre": "Kevin Alexander",
+      "apellido": "Guzman Botero",
+      "grupo": "11"
+    },
+    {
+      "id": 5,
+      "nombre": "Juanito",
+      "apellido": "Alcachofa",
+      "grupo": "9"
+    },
+    {
+      "id": 6,
+      "nombre": "Pepe",
+      "apellido": "Globito",
+      "grupo": "8"
+    },
+    {
+      "nombre": "Pepito",
+      "apellido": "Peppo",
+      "grupo": "1-2",
+      "id": 7
+    }
+  ],
+  "faltas": [
+    {
+      "id": 1,
+      "descripcion": "prueba",
+      "id_usuario": "123456",
+      "fecha": "2020-11-03 14:31:46",
+      "estado": "activo",
+      "id_estudiante": "0"
+    },
+    {
+      "id": 2,
+      "descripcion": "prueba",
+      "id_usuario": "123456",
+      "fecha": "2020-11-03 14:32:20",
+      "estado": "activo",
+      "id_estudiante": "0"
+    },
+    {
+      "id": 3,
+      "descripcion": "prueba1",
+      "id_usuario": "12345",
+      "fecha": "2020-11-03 14:32:21",
+      "estado": "activo",
+      "id_estudiante": "0"
+    },
+    {
+      "id": 4,
+      "descripcion": "prueba2",
+      "id_usuario": "123",
+      "fecha": "2020-11-03 14:32:22",
+      "estado": "activo",
+      "id_estudiante": "0"
+    },
+    {
+      "id": 5,
+      "descripcion": "prueba3",
+      "id_usuario": "1234",
+      "fecha": "2020-11-03 14:32:23",
+      "estado": "activo",
+      "id_estudiante": "0"
+    }
+  ],
+  "grupos": [
+    {
+      "id": 1,
+      "nombre_grupo": "Los pollitos",
+      "grupo": "11-1",
+      "asignatura": "Artistica"
+    },
+    {
+      "id": 2,
+      "nombre_grupo": "Learning english",
+      "grupo": "10-2",
+      "asignatura": "Inglés"
+    },
+    {
+      "id": 3,
+      "nombre_grupo": "Recuperaciones anuales",
+      "grupo": "9-3",
+      "asignatura": "Español"
+    },
+    {
+      "id": 4,
+      "nombre_grupo": "Los pirañas",
+      "grupo": "11-2",
+      "asignatura": "Español"
+    },
+    {
+      "nombre_grupo": "Los gurres",
+      "grupo": "7-2",
+      "asignatura": "Biologia",
+      "id": 5
+    },
+    {
+      "nombre_grupo": "Refuerzo matematicas",
+      "grupo": "11-3",
+      "asignatura": "Matematicas",
+      "id": 6
+    },
+    {
+      "nombre_grupo": "Grupo",
+      "grupo": "2-1",
+      "asignatura": "Tecnología",
+      "id": 7
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Johnny",
+      "apellido": "Mebaño",
+      "contraseña": "12345",
+      "correo": "johnnymebaño@correo.com",
+      "rol": "1"
+    }
+  ]
+}

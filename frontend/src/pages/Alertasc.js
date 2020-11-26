@@ -1,12 +1,103 @@
-import React, { Component } from 'react';
-import '../styles/styles.css';
 import {Link} from 'react-router-dom'; 
-import logo from '../imagenes/logo.png'
+import Coor from '../imagenes/Coor.jpg';
 
-class Login extends Component {
+import React, { Component } from "react";
+import axios from "axios";
+import { Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
+
+import '../styles/styles.css';
+const url="http://localhost:3000/usuarios";
+
+
+class App extends Component {
+state={
+  data:[],
+  modalInsertar: false,
+  modalEliminar: false,
+  form:{
+    id: '',
+    nombre_grupo: '',
+    grupo: '',
+    asignatura: ''
+  }
+}
+
+  
+peticionGet=()=>{
+axios.get(url).then(response=>{
+  this.setState({data: response.data});
+}).catch(error=>{
+  console.log(error.message);
+})
+}
+
+peticionPost=async()=>{
+  delete this.state.form.id;
+  await axios.post(url,this.state.form).then(response=>{
+    this.modalInsertar();
+    this.peticionGet();
+  }).catch(error=>{
+    console.log(error.message);
+  })
+}
+
+peticionPut=()=>{
+  axios.put(url+this.state.form.id, this.state.form).then(response=>{
+    this.modalInsertar();
+    this.peticionGet();
+  })
+}
+
+peticionDelete=()=>{
+  axios.delete(url+this.state.form.id).then(response=>{
+    this.setState({modalEliminar: false});
+    this.peticionGet();
+  })
+}
+
+modalInsertar=()=>{
+  this.setState({modalInsertar: !this.state.modalInsertar});
+}
+peticionGet=()=>{
+  axios.get(url).then(response=>{
+    this.setState({data: response.data});
+  }).catch(error=>{
+    console.log(error.message);
+  })
+  }
+
+
+seleccionarGrupo=(usuarios)=>{
+  this.setState({
+    tipoModal: 'actualizar',
+    form: {
+      id: usuarios.id,
+      nombre: usuarios.nombre,
+      apellido: usuarios.apellido
+    }
+  })
+}
+
+handleChange=async e=>{
+e.persist();
+await this.setState({
+  form:{
+    ...this.state.form,
+    [e.target.name]: e.target.value
+  }
+});
+console.log(this.state.form);
+}
+
+  componentDidMount() {
+    this.peticionGet();
+  }
+  
+
+  render(){
+    const {form}=this.state;
+  return (
     
-    render() {
-        return (
           
           <>
 
@@ -34,10 +125,33 @@ class Login extends Component {
    <div className="row justify-content-center align-items-center minh-100">
 <form className="form-signin text-center align-items-center col-10">
   
-<div>
- <h2>11°1</h2>
- <p className="bloque">Docente</p> 
- <Link to="AsisCoor"><a className="h4 bloque" href="AsisCoor">Ver mas</a></Link> 
+<div><table className="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {this.state.data.map(usuarios=>{
+          return(
+            <tr>
+          <td>{usuarios.id}</td>
+          <td>{usuarios.nombre}</td>
+          <td>{usuarios.apellido}</td>
+          <td><Link to="AsisCoor">
+    <button className="btn btn-success" type="submit">Ver mas</button>
+    </Link></td>
+          </tr>
+
+          
+          )
+        })}
+      </tbody>
+      
+    </table>
  </div>
 
 </form>
@@ -52,4 +166,4 @@ class Login extends Component {
 
 
  
-export default Login;
+export default App;

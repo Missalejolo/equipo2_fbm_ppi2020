@@ -17,6 +17,8 @@ import Prueba from './pages/Prueba';
 import AggEstudiante from './pages/AggEstudiante';
 import AggGrupo from './pages/AggGrupo';
 import CompletadoD from './pages/CompletadoD';
+
+import Estudiantes from './pages/Estudiantes';
 const App = () => {
   return (
     <BrowserRouter>
@@ -37,6 +39,7 @@ const App = () => {
             <Route path="/aggestudiante" component={AggEstudiante} />
             <Route path="/completadod" component={CompletadoD} />
             <Route path="/agggrupo" component={AggGrupo} />
+            <Route path="/estudiantes" component={Estudiantes} />
             </Switch>
              </BrowserRouter>
 
